@@ -1,0 +1,70 @@
+
+body {
+	font-family: Roboto;
+	background: #1D4350;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+	background: #333333;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+input {
+	font-size: 18px;
+	background: #f7f7f7;
+	/* only includes content, not padding / margin / border */
+	width: 100%;
+	/* top, right, bottom, left */
+	padding: 13px 13px 13px 20px;
+	/* bow includes padding and border */
+	box-sizing: border-box;
+	color: #333333;
+	/* covers the little native border and makes it invisible */
+	border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus{
+	background: white;
+	border: 3px solid #333333;
+	/* prevents input higlight coming from browser */
+	outline: none;
+}
+
+ul {
+	/* remove bullet points */
+	list-style: none;
+	/* remove space around it */
+	padding: 0 0 0 5px;
+	margin: 0;
+}
+
+li {
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+.container {
+	width: 360px;
+	margin: 50px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+
+.completed {
+	color: grey;
+	text-decoration: line-through;
+}
