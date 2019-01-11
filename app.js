@@ -11,11 +11,7 @@ var ejs = require('ejs');
 // for not having to write .ejs every time
 app.set('view engine', 'ejs');
 
-app.get('/search', function(req, res){
-	res.render('search');
-});
-
-app.get('/results', function(req, res){
+app.get('/', function(req, res){
 	// search has been inputted and stored in the search.ejs file, whose form tag then called the /results url and passed it here
 	var query = req.query.search;
 	// put it into the actual api search url and store that in a variable
